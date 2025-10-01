@@ -1,0 +1,624 @@
+/* Main banner container - dark blue bar at the top of the page */
+.top-banner {
+    background-color: #041f4a; /* Dark blue background */
+    color: white;
+    font-family: 'Georgia', serif;
+    top: 0;
+    height: 3.75rem;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 2rem; 
+}
+
+/* Container for the "Support the Guardian" text and fund line */
+.banner-text {
+    display: flex;
+    flex-direction: column; /* Stacks text vertically */
+    align-items: flex-start; /* Aligns text to the left */
+    justify-content: center; /* Centers text vertically */
+    gap: 0.25rem; /* Space between the two lines of text (4px → 0.25rem) */
+}
+
+/* Main "Support the Guardian" text styling */
+.support-line {
+    font-weight: 700; /* Makes text bold */
+    font-size: 1.5625rem; /* Large text size (25px → 1.5625rem) */
+    line-height: 1.2;
+}
+
+/* Smaller text below "Support the Guardian" */
+.fund-line {
+    font-size: 0.9375rem; /* Smaller text size (15px → 0.9375rem) */
+    line-height: 1.2;
+    opacity: 0.9; /* Makes text slightly transparent */
+}
+
+/* Support section with fixed positioning */
+.support-section {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Space between elements (24px → 1.5rem) */
+    position: absolute;
+    left: 9.375rem; /* Position from the left (150px → 9.375rem) */
+}
+
+/* Yellow support button */
+.support-button {
+    background-color: #ffe500;
+    color: #121212;
+    font-family: "Guardian Text Sans", "Guardian Sans Text", sans-serif;
+    font-size: 0.8125rem; /* Font size (13px → 0.8125rem) */
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.1875rem 0.75rem; /* Adjusted padding (3px 12px → 0.1875rem 0.75rem) */
+    border-radius: 0.75rem; /* Adjusted for larger button (12px → 0.75rem) */
+    display: flex;
+    align-items: center;
+    gap: 0.25rem; /* Slightly increased gap (4px → 0.25rem) */
+    line-height: 1;
+    margin-top: -0.5rem; /* Negative margin (8px → -0.5rem) */
+    transition: background-color 0.3s ease;
+}
+
+/* Arrow icon in button */
+.support-button svg {
+    width: 1.1875rem; /* Increased to match Guardian's size (19px → 1.1875rem) */
+    height: 1.1875rem; /* Increased to match Guardian's size (19px → 1.1875rem) */
+    margin-top: 0;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for arrow */
+.support-button:hover svg {
+    transform: translateX(0.25rem); /* Moves arrow right on hover (4px → 0.25rem) */
+}
+
+/* Button hover effects */
+.support-button:hover {
+    background-color: #e6b000; /* Warmer orange-yellow on hover */
+}
+
+/* Navigation with fixed positioning */
+.banner-nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 11.25rem; /* Fixed distance from right (180px → 11.25rem) */
+}
+.banner-nav li{
+    position: relative;
+}
+.banner-nav ul li>div svg{
+    fill: white;
+}
+.banner-nav ul li>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+
+.banner-nav ul:last-child {
+    display: flex;
+}
+
+/* Navigation list styling */
+.banner-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem; /* Gap between nav items (16px → 1rem) */
+    height: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Individual navigation link styling */
+.banner-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.125rem; /* Font size */
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    height: calc(100% - 0.625rem); /* Space at bottom only */
+    white-space: nowrap;
+    transition: text-decoration 0.2s ease;
+    /* padding: 0 0.75rem; Padding (12px → 0.75rem) */
+}
+
+/* Adding the thin white line */
+.banner-nav ul li::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: -0.9375rem; /* Extends line to top of banner */
+    height: calc(100% + 0.9375rem); /* Adjusts height to match full banner height */
+    width: 0.0625rem; /* Line width  */
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Hover effect for navigation links */
+.banner-nav ul li a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    text-underline-offset: 0.25rem; /* Space between text and underline */
+    text-decoration-thickness: 0.0625rem; /* Sets underline thickness */
+}
+
+/* Basic page styling */
+body {
+    font-family: 'Georgia', serif;
+    background-color: white;
+    color: #121212;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto; /* Allows horizontal scroll when needed */
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    max-width: 75rem; /* Maximum width  */
+    margin: 1.25rem auto; /* Margin  */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.25rem; /* Gap between grid items  */
+}
+
+/* Content Section Styles */
+.content-section {
+    background: white;
+    padding: 1.25rem; /* Padding */
+    border-radius: 0.3125rem; /* Border radius  */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background: white;
+    padding: 1.25rem; /* Padding  */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 800px) {
+    .banner-text {
+        padding-left: 3.125rem; /* Adjust spacing for smaller screens */
+    }
+}
+
+.banner-nav ul li a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    text-underline-offset: 0.25rem; /* Adds space between text and underline  */
+    text-decoration-thickness: 0.0625rem; /* Sets underline thickness  */
+}
+
+/* Second banner styling */
+.second-banner {
+    background: #052962;
+    color: white;
+    z-index: 1;
+    padding: 1.25rem 2rem 0 2rem; /* Padding  */
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Remove the gap */
+    position: relative; /* Enables positioning adjustments */
+}
+
+/* Move bottom text upward */
+.top-nav {
+    margin-top: -30rem; /* Move the navigation bar closer to the top */
+    padding-bottom: 0.375rem; /* Keeps padding below consistent */
+    padding-left: 7.5rem;
+    position: relative; /* Allows precise adjustments */
+    margin-bottom: 4rem; /* Leaves space below for another nav bar */
+}
+
+/* Guardian branding container */
+.guardian-branding {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 11.25rem;
+    margin-top: 0; /* Remove top margin */
+    position: relative;
+    margin-bottom: 2rem; /* Leaves space below */
+}
+
+/* Stacked title container */
+.stacked-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* "the" text styling */
+.the {
+    font-family: Georgia, serif;
+    font-size: 4.8125rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: -0.5rem; 
+    margin-left: 5.5rem;
+    letter-spacing: 0.0625rem;
+}
+
+/* "guardian" text styling */
+.guardian-main {
+    font-family: "Noto Serif", "Libre Baskerville", Georgia, serif;
+    font-size: 4.8125rem; 
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.0625rem;  
+}
+
+/* Navigation bar alignment */
+.top-nav {
+    margin-top: -2rem; /* Move it further up to align with branding */
+    padding-bottom: 0.375rem; /* Keeps consistent padding below */
+    padding-left: 4rem; /* Ensure alignment with the layout */
+    position: relative;
+    display: flex; /* Enable flexbox for spacing between items */
+    gap: 1.5rem; /* Adds consistent spacing between navigation items */
+    margin-top: -2.5rem; /* Create space above the cohesive box */
+}
+
+/* Adjust text container to align properly */
+.nav-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    margin: 0;
+    padding-bottom: 0;
+    align-items: center;
+    height: 100%;
+}  
+
+.nav-item {
+    position: relative;
+    padding: 0;
+    margin-right:15px;
+    width: 100%;
+}
+
+/* White line to the left of nav items (except News) */
+.nav-item a::before {
+    content: '';
+    position: absolute;
+    right: -0.25rem; /* Shift lines slightly left */
+    height: calc(100% + 1.65rem); /* Ensure lines meet the cohesive box */
+    width: 0.0625rem; /* Thin line */
+    background-color: rgba(255, 255, 255, 0.3); /*Match other lines */
+}
+
+/* Navigation item styling */
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem; /* 24px → 1.5rem */
+    font-weight: 900;
+    display: block;
+    position: relative;
+    top: -0.5rem;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    border-bottom: none;
+    transition: border-bottom-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 180%; 
+    height: 0.25rem;
+    transform-origin: bottom;
+    width: 100%;
+    background-color: var(--pillar-underline);
+    transform: scaleY(0);
+    transition: transform 0.3s ease-in-out;
+}
+/* Navigation hover effects with inset on left side */
+.nav-item a:hover::after {
+    transform: scaleY(1);
+}
+
+/* Menu button container */
+.menu-button {
+    display: flex;
+    margin-top: -1rem;
+    align-items: center;
+    margin-left: 0.75rem;
+    position: relative;
+}
+
+/* Vertical line next to hamburger menu */
+.vertical-line {
+    content: '';
+    position: absolute;
+    left: -0.4rem; /* Adjust placement to prevent overlap */
+    top: -0.5rem; /* Align starting point with other lines */
+    height: calc(100% + 2rem); /* Extend to meet cohesive box */
+    width: 0.0625rem; /* Keep the line thin */
+    background-color: rgba(255, 255, 255, 0.3); /* Match the other lines' color */
+    margin-right: 0.75rem; /* Keep spacing between the line and the button */
+}
+
+/* Yellow circle with hamburger icon */
+.yellow-circle {
+    width: 2.25rem; /* 36px → 2.25rem */
+    height: 2.25rem; /* 36px → 2.25rem */
+    background-color: #ffe500;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #121212;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Adjust the SVG size inside the circle */
+.yellow-circle svg {
+    width: 1.625rem; /* 26px → 1.625rem */
+    height: 1.625rem; /* 26px → 1.625rem */
+}
+
+/* Hover effect for yellow circle */
+.yellow-circle:hover {
+    background-color: #e6b000;
+}
+
+/* Move the dropdown closer to the top */
+.edition-dropdown {
+    position: relative;
+    margin-top: 0; /* Remove unnecessary spacing */
+    top: -0.5rem; /* Move dropdown closer to the top */
+    margin-bottom: 1rem; /* Add space below if needed */
+}
+
+/* Edition button styling */
+.edition-button {
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Georgia', serif;
+    font-size: 1.125rem; /* 18px → 1.125rem */
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem; /* 4px → 0.25rem */
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Arrow icon in dropdown */
+.edition-button svg {
+    width: 0.75rem; /* 12px → 0.75rem */
+    height: 0.75rem; /* 12px → 0.75rem */
+    transition: transform 0.3s ease;
+}
+
+/* Remove background hover effect and keep dropdown styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 10rem; /* 160px → 10rem */
+    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.2); /* 2px 5px → 0.125rem 0.3125rem */
+    z-index: 1;
+    margin-top: 0.5rem; /* 8px → 0.5rem */
+}
+
+.dropdown-content a {
+    color: #121212;
+    padding: 0.75rem 1rem; /* 12px 16px → 0.75rem 1rem */
+    text-decoration: none;
+    display: block;
+    font-family: 'Georgia', serif;
+    font-size: 0.9375rem; /* 15px → 0.9375rem */
+}
+
+/* Update hover effect to only change background of dropdown items */
+.dropdown-content a:hover {
+    background-color: #f6f6f6;
+}
+
+.edition-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Remove any background color change on button hover */
+.edition-button:hover {
+    color: white;
+}
+
+/* Navigation item styling - adjust first item (News) */
+.nav-item:first-child a {
+    padding-left: 0; /* Keep this to ensure News aligns correctly */
+}
+
+/* Adjust the hover effect for News to match new alignment */
+.nav-item:first-child a:hover::after {
+    left: 0.125rem; 
+}
+
+/* Add this @import at the top of your CSS file to load the Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&family=Libre+Baskerville:wght@400;700&display=swap');
+
+/* Shared Indentation */
+.container-fluid {
+    margin-top: 0; /* Ensure no offset above the cohesive box */
+    margin: 0 7rem;
+}
+
+/* Cohesive Box Wrapping Everything */
+.content-wrapper {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto; /* Add an extra row for the navigation bar */
+    gap: 20px;
+    top: 260px;
+    margin-left: auto; /* Center the box horizontally */
+    margin-right: auto; /* Center the box horizontally */
+    margin-top: -2rem; /* Move it closer to the branding */
+    padding: 1rem; /* Add internal spacing */
+    border: 0.0625rem solid #ddd; /* Visible border */
+    background: transparent;
+    border-radius: 0; /* Sharp corners */
+    /*position: absolute; /* Allows for relative placement */
+    z-index: 999; /* Ensures it remains in front of other elements */
+}
+
+/* Box Overlapping the Second Banner */
+.container-fluid {
+    margin-top: -1.25rem; /* Keeps overlapping effect intact */
+}
+
+/* Navigation Bar Styling Inside the Grid */
+.sub-nav {
+    grid-column: 1 / -1; /* Span across all columns in the grid */
+    grid-row: 1; /* Place in the first row of the grid */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* No background color */
+    padding: 0.5rem 0; /* Adjust spacing around the bar */
+    width: 100%; /* Full width */
+    position: relative; /* Enables precise adjustment */
+    z-index: 3; /* Ensure it stays visible on top of the blue background */
+}
+
+/* Navigation List */
+.sub-nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Align items horizontally */
+    gap: 1.33rem; /* Space between each item */
+    margin: 0; /* Reset margins */
+    padding: 0; /* Reset padding */
+    background-color: #052962;
+}
+
+/* Navigation List Items */
+.sub-nav li {
+    font-family: Arial, sans-serif; /* Clean font style */
+    font-size: 1rem; /* Standard font size */
+    font-weight: bold; /* Emphasize links */
+    color: white; /* White text */
+    white-space: nowrap; /* Prevent text from wrapping onto the next line */
+}
+
+/* Styling for Navigation Links */
+.sub-nav a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Default text color */
+    font-size: 0.8rem;
+    transition: color 0.3s ease; /* Smooth hover effect */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.sub-nav a:hover {
+    color: #ffe500; /* Highlight link on hover */
+}
+
+/* Headlines Title */
+.section-title 
+{
+    grid-row: 2; /* Place the headline in the second row */
+    font-size: 1.5rem; /* Font size for the headline title */
+    font-weight: bold;
+    margin-bottom: 50rem; /* Space below the headline */
+    padding-right: 1.25rem; /* Space between the headline and the grid */
+    text-align: left; /* Keeps headline left-aligned */
+    display: block; /* Ensures it's treated as a block element */
+}
+
+/* Parent Row Styling */
+.row.g-0 {
+    display: flex; /* Enables Flexbox for layout control */
+    flex-wrap: nowrap; /* Prevents wrapping */
+    align-items: flex-start; /* Aligns columns at the top */
+    width: 100%; /* Ensures the row stays within the container */
+    box-sizing: border-box; /* Includes padding and borders in width */
+    gap: 0; /* Eliminates gaps between columns */
+}
+
+/* Left Column */
+.main-stories:first-child {
+    flex: 0 0 50%; /* Sets width to half */
+    max-width: 50%; /* Constrains width to half */
+    margin-top: 0; /* Removes any vertical offset */
+    padding-top: 0; /* Ensures no top padding */
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stacks content vertically */
+    justify-content: flex-start; /* Aligns content at the top */
+}
+
+.second-title-box {
+    height: 40rem; /* Keeps the box's height */
+    padding: 0.625rem; /* Internal spacing */
+    margin: 0; /* Reset external margins */
+    position: relative; /* Enable precise positioning */
+    top: -1rem; /* Move it upward to align with the box above */
+    left: -1rem; /* Move it slightly to the left */
+    flex-grow: 1; /* Allows it to expand within its parent */
+    display: flex; /* Enables layout inside the box */
+    flex-direction: column; /* Stacks content vertically */
+    justify-content: flex-start; /* Aligns content at the top */
+    align-items: flex-start; /* Keeps content aligned to the left */
+    overflow: hidden; /* Prevents unintended overflow */
+    box-sizing: border-box; /* Includes borders and padding in height/width */
+}
+
+.right-column {
+    width: 100%;
+}
+
+.container-secondary {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: -12rem;
+    height: fit-content;
+}
+
+/* Right Column */
+.right-column:last-child {
+    flex: 0 0 33.5%; /* Matches the width of the left column */
+    margin-top: 0; /* Removes any offset */
+    padding: 0; /* Ensures no internal padding */
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stacks content vertically */
+    justify-content: flex-start; /* Aligns content at the top */
+}
+
+/* Right-Side Boxes */
+.right-column .right-story {
+    border-bottom: 0.0625rem solid #ddd; /* Consistent border styling */
+    padding: 0.625rem 0; /* Internal padding */
+    height: auto; /* Allows dynamic height adjustment */
+    display: flex; /* Enables Flexbox */
+    flex-direction: column; /* Stacks content vertically */
+    justify-content: flex-start; /* Aligns content at the top */
+    width: 100%;
+}
+
+.custom-link {
+    text-decoration: none; /* Removes default underline */
+    color: black; /* Sets text color to black */
+    font-weight: bold; /* Ensures visibility */
+    transition: text-decoration 0.3s ease; /* Smooth effect */
+}
+
+.custom-link:hover {
+    text-decoration: underline; /* Adds underline when hovered */
+}

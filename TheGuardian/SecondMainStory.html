@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Guardian (Prototype)</title>
+        <!-- Base Styles -->
+        <link rel="stylesheet" href="SecondMainStory.css">
+</head>
+
+<body>
+    <!-- Main top banner container -->
+    <div class="top-banner">
+        <!-- Left side of banner with support text -->
+        <div class="support-section">
+            <!-- Container for stacked text -->
+            <div class="banner-text">
+                <!-- Main support text -->
+                <div class="support-line">Support the Guardian</div>
+                <!-- Secondary funding text -->
+                <div class="fund-line">Fund independent journalism with £12 per month</div>
+            </div>
+            <!-- Yellow support button with animated arrow -->
+            <a href="#" class="support-button">
+                Support us
+                <!-- SVG arrow icon - viewBox defines coordinate system, aria-hidden makes it decorative -->
+                <svg viewBox="0 0 32 32" width="1rem" height="1rem" aria-hidden="true">
+                    <path d="M22.82 15.42l-6.36-6.35L18.4 7l9.43 9.42L18.4 25.85l-1.94-2.07 6.36-6.36H3v-2h19.82z" fill="currentColor"></path>
+                </svg>
+            </a>
+        </div>
+        <!-- Right side navigation -->
+        <nav class="banner-nav">
+            <ul>
+                <li><a href="#">Print subscriptions</a></li>
+                <li><a href="#">Search jobs</a></li>
+                <li>
+                    <div>
+                        <svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 0C3.1 0 0 3.1 0 7c0 2 .9 3.9 2.4 5.2C3.6 13.4 5.3 14 7 14c1.7 0 3.4-.6 4.7-1.8C13.2 10.9 14 9 14 7c0-3.9-3.1-7-7-7zm0 1.8c1.3 0 2.1.8 2.1 2.1S8 6.3 7 6.3c-.8 0-2-1.1-2-2.4 0-1.4.7-2.1 2-2.1zm0 11.6c-1.7 0-3.3-.7-4.5-1.8l.8-3.2.5-.5c1-.4 2.1-.5 3.1-.5 1.1 0 2.1.2 3.1.5l.5.5.9 3.2c-1.1 1.2-2.7 1.8-4.4 1.8z"></path></svg>
+                        <a href="#">Sign in</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="second-banner">
+        <div class="guardian-branding">
+            <div class="stacked-title">
+                <div class="the">The</div>
+                <div class="guardian-main">Guardian</div>
+            </div>
+            <div class="edition-dropdown">
+                <button class="edition-button">
+                    UK
+                    <svg viewBox="0 0 32 32" width="0.75rem" height="0.75rem">
+                        <path d="M16 19.4L27.4 8L29 9.6L16 22.6L3 9.6L4.6 8L16 19.4Z" fill="currentColor"></path>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">UK edition</a>
+                    <a href="#">US edition</a>
+                    <a href="#">Australia edition</a>
+                    <a href="#">International edition</a>
+                </div>
+            </div>
+        </div>
+        <div class="top-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/" style="--pillar-underline:#FF5943;" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="/commentisfree" style="--pillar-underline:#FF7F0F;" class="nav-link">Opinion</a></li>
+                <li class="nav-item"><a href="/sport" style="--pillar-underline:#00B2FF;" class="nav-link">Sport</a></li>
+                <li class="nav-item"><a href="/culture" style="--pillar-underline:#EACCA0;" class="nav-link">Culture</a></li>
+                <li class="nav-item"><a href="/lifeandstyle" style="--pillar-underline:#FFABDB;" class="nav-link">Lifestyle</a></li>
+                <li class="menu-button">
+                    <div class="yellow-circle">
+                        <svg viewBox="0 0 24 24" width="1.375rem" height="1.375rem">
+                            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <body>
+        <div class="container-fluid">
+            <div class="row g-0">
+                <!-- Cohesive Box Wrapping Both the Headline Title and Grid -->
+                <div class="content-wrapper border-box">
+                    <!-- The Navigation Bar for the white page-->
+            <div class="sub-nav">
+                <ul>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Economics</a></li>
+                    <li><a href="#">Banking</a></li>
+                    <li><a href="#">Money</a></li>
+                    <li><a href="#">Markets</a></li>
+                    <li><a href="#">Project Syndicate</a></li>
+                    <li><a href="#">B2B</a></li>
+                    <li><a href="#">Retail</a></li>
+                </ul>
+            </div>
+                                            <!-- Headlines Title -->
+                                            <div class="">
+                                                <h2 class="section-title">Politics</h2>
+                                                <div class="section-divider">
+                                                    <div class="divider-line"></div>
+                                                    <div class="divider-line"></div>
+                                                    <div class="divider-line"></div>
+                                                </div>
+                                                <div class="byline-section">
+                                                    <div class="byline-stack">
+                                                        <div class="author">Tom Phillips <br> Richard Partington</div>
+                                                        <div class="publish-date">Tue 4 Feb 2025 23:15 BST</div>
+                                                        <button class="share-button">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256" style="fill:#FA5252;">
+                                                                <g fill="#fa5252"><g transform="scale(10.66667,10.66667)">
+                                                                    <path d="M18,2c-1.64501,0 -3,1.35499 -3,3c0,0.19095 0.02179,0.37712 0.05664,0.55859l-7.13477,4.16211c-0.52334,-0.44285 -1.1898,-0.7207 -1.92187,-0.7207c-1.64501,0 -3,1.35499 -3,3c0,1.64501 1.35499,3 3,3c0.73208,0 1.39854,-0.27785 1.92188,-0.7207l7.13477,4.16016c-0.03509,0.18206 -0.05664,0.36893 -0.05664,0.56055c0,1.64501 1.35499,3 3,3c1.64501,0 3,-1.35499 3,-3c0,-1.64501 -1.35499,-3 -3,-3c-0.73252,0 -1.39841,0.27933 -1.92187,0.72266l-7.13477,-4.16406c0.03485,-0.18147 0.05664,-0.36764 0.05664,-0.55859c0,-0.19095 -0.02179,-0.37712 -0.05664,-0.55859l7.13477,-4.16211c0.52333,0.44285 1.1898,0.7207 1.92188,0.7207c1.64501,0 3,-1.35499 3,-3c0,-1.64501 -1.35499,-3 -3,-3zM18,4c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1zM6,11c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1zM18,18c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1z"></path>
+                                                                </g></g>
+                                                            </svg>
+                                                            Share
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        <div style="flex: 1;">
+                            <h2 class="main-title">Deal between Trump and Mexican leader for one-month pause in tariffs</a></h2>
+                            <div>
+                                <img src="DonaldTrump.webp" alt="DonaldTrump off plane after tariff negotiations" style="width: 100%; height: 400px; object-fit: cover;">
+                            </div>
+                            <p class="article-description">
+                                Last night the leaders agreed to pause US tariffs for a month to allow fresh negotiations. Mexico has agreed to send 10,000 members of its national guard "to prevent drug trafficking from Mexico to the US, in particular of fentany!", Sheinbaum said. In return, the US had agreed to work to prevent high-powered weapons crossing the border into Mexico. Trump confirmed  the deal shortly afterwards on his Truth Social network. 
+                                He said 10,000 Mexican soldiers would be "specifically designated to stop the flow of fentanyl, and illegal migrants into our country": Negotiations involving senior Mexican officials, the US secretary of state, Marco Rubio, the US treasury secretary, Scott Bessent, and the US commerce secretary, Howard Lutnick would take place during the pause, he said. <br><br>
+                                Markets sold off sharply worldwide in what was described as a "Trump tariff tantrum" before recovering some of their losses after news broke of the deal with Mexico. Wall Street fell in early trading, with the S&P 500 falling by almost 2%, while share prices in Europe followed a sharp move lower in Asia.<br><br>
+                                In London, the FTSE 100 dropped 1.4% from Friday's record high, before clawing back some of its losses to trade down 1%.<br><br>
+                                Trump indicated on Sunday that the EU would be next to face tariffs but did not say when. "They don't take our cars, they don't take our farm products. They take almost nothing and we take everything from them," he told reporters.<br><br>
+                                EU leaders meeting at an informal summit in Brussels yesterday said Europe would be prepared to fight back if the US imposed tariffs, but also called for negotiation. The French president, Emmanuel Macron, said if the EU were attacked in its commercial interests it would have to "make itself respected and thus react".<br><br>
+                                The German chancellor, Olaf Scholz, said the bloc could respond with its own tariffs, but stressed it was better to find agreement on trade.<br><br>
+                                Trump hinted that Britain might be spared tariffs, saying: "I think that one can be worked out." Asked whether he was worried by Trump's refusal to rule out hitting the UK with tariffs, <br><br> Keir Starmer said:
+                                "Obviously, it's early days. I think what's really important is open and strong trading relations and that's been the basis of my discussions with President Trump. I know that intense US-EU discussions are planned."<br><br>
+                                Officials, analysts and economists who believe Trump's tariffs could have disastrous consequences for the global economy and for the US's place<br><br>
+                                “I don't think anyone expected a resolution today, and obviously it's a relief. But the damage is done”<br><br>
+                                Brian Winter<br>
+                                Americas Quarterly editor 
+                                </p>
+                        </div>
+                        <div class="right-column">
+                            <!-- Vertical Lines -->
+                            <div class="vertical-lines">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                </div>
+                            <!-- Most Viewed Header -->
+                            <h3 class="most-viewed">Most viewed</h3>
+                            <article class="card right-story">
+                                <div class="story-content">
+                                    <img src="Cat.avif" alt="Cat Photo" class="circle-image">
+                                    <h3 class="right-title">Scotland insist 'no pet ban' after panic</h3>
+                                </div>
+                            </article>
+                            
+                            <article class="card right-story">
+                                <img src="StabbingIncident.avif" alt="Memorial flowers for dead teen" class="circle-image">
+                                <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;">Boy,15, dies after stabbing incident at Sheffield school </h3>
+                            </article>
+                            
+                            <article class="card right-story">
+                                <img src="Microplastics.avif" alt="Microplastics on finger" class="circle-image">
+                                <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;"> Level in human brains rising, study suggests </h3>
+                            </article>
+
+                            <article class="card right-story">
+                                <img src="TeenSoldier.webp" alt="Photo of military teen who died in action" class="circle-image">
+                                <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;"> British volunteer in Ukraine, 18, killed by drone on first mission</h3>
+                            </article>
+                            
+                            <article class="card right-story">
+                                <img src="Trump.avif" alt="Make America Great Again" class="circle-image">
+                                <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;">How US levies may affect the UK and EU </h3>
+                            </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bottom-banner">
+        <div class="footer-content">
+            <img src="TheGuardianFooter.png" alt="Guardian Footer" class="footer-image">
+        </div>
+</footer>
+<script src="script.js"></script>
+    </body>
+    </html>

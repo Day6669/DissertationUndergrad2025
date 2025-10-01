@@ -1,0 +1,29 @@
+/* Top banner adjustments */
+.top-banner {
+    height: 4rem; /* Slightly taller banner for desktops */
+    padding: 0 3rem; /* Increase left and right padding */
+}
+
+.banner-text {
+    font-size: 1.5rem; /* Larger font size for desktop */
+}
+
+.banner-nav ul li a {
+    font-size: 1.25rem; /* Larger navigation text */
+    padding: 0 1rem; /* Add spacing around links */
+}
+
+.container {
+    max-width: 90rem; /* Increase the container width */
+    gap: 2rem; /* Increase spacing between grid items */
+}
+
+/* Second banner adjustments */
+.second-banner {
+    padding: 2rem 3rem; /* Increase padding for the second banner */
+}
+
+.section-title {
+    font-size: 2rem; /* Larger headline font size */
+    margin-bottom: 40rem; /* Adjust space below the headline */
+}

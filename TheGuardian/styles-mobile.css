@@ -1,0 +1,36 @@
+/* Top banner adjustments */
+.top-banner {
+    flex-direction: column; /* Stack items vertically */
+    height: auto; /* Let height adjust dynamically */
+    padding: 1rem; /* Reduce padding */
+}
+
+.banner-text {
+    font-size: 1rem; /* Smaller font size */
+    padding-left: 1rem; /* Adjust left padding */
+}
+
+.banner-nav ul {
+    flex-direction: column; /* Stack navigation links vertically */
+    gap: 0.5rem; /* Reduce gap between links */
+}
+
+.banner-nav ul li a {
+    font-size: 0.875rem; /* Compact text size */
+    padding: 0.5rem; /* Adjust padding */
+}
+
+.container {
+    max-width: 100%; /* Use full width for mobile screens */
+    gap: 1rem; /* Reduce spacing between grid items */
+}
+
+/* Second banner adjustments */
+.second-banner {
+    padding: 1rem; /* Compact padding for the second banner */
+}
+
+.section-title {
+    font-size: 1rem; /* Small headline font size */
+    margin-bottom: 20rem; /* Reduce space below the headline */
+}

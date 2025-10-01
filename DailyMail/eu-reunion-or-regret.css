@@ -1,0 +1,641 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Stops side scrolling */
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper for Navigation and Header */
+.nav-wrapper {
+    display: flex; /* Align items horizontally */
+    justify-content: space-between; /* Space between ADVERTISEMENT and header */
+    align-items: center; /* Vertically align items */
+    width: 100%; /* Full width of the screen */
+    margin: 0; /* Remove extra margins */
+    padding: 0; /* Remove padding */
+    box-sizing: border-box; /* Prevent padding from affecting layout */
+}
+
+/* Styling for Advertisement Text */
+.ad-left, .ad-right {
+    font-size: 0.875rem; /* Text size for ADVERTISEMENT */
+    color: #808080; /* Grey text for subtle appearance */
+    text-transform: uppercase; /* Make it uppercase for emphasis */
+    margin: 0; /* Remove margins */
+    padding: 0 0.5rem; /* Adjust spacing directly around ADVERTISEMENT */
+    align-self: center; /* Ensure vertical alignment */
+}
+
+.ad-left {
+    margin-right: 1rem; /* Add margin to the right to align with left section */
+    padding-right: 0; /* Remove right padding */
+}
+
+/* Top Header Styling */
+.top-header {
+    display: flex; /* Align content horizontally */
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Vertically align items */
+    background-color: #fff; /* White background */
+    padding: 0 1.25rem; /* Maintain horizontal padding only */
+    width: auto; /* Fit content */
+    max-width: 70rem; /* Constrain layout width */
+    margin: 0; /* Remove extra margin */
+    border-bottom: 0.0625rem solid #dcdcdc; /* Grey bottom border */
+    box-shadow: none; /* No shadow */
+    box-sizing: border-box; /* Ensure borders and padding stay inside the width */
+}
+
+/* Styling the follow button */
+.follow-btn {
+    display: flex; /* Flex layout for left alignment */
+    align-items: center; /* Align items vertically */
+    background-color: #4267B2; /* Facebook blue */
+    color: #fff; /* White text */
+    border: none;
+    padding: 0.3125rem 0.625rem; /* Adjust padding */
+    margin-left: 0.625rem; /* Spacing from links */
+    margin-right: 1.25rem; /* Spacing from right section */
+    border-radius: 0.1875rem; /* Slight rounded corners */
+    cursor: pointer;
+    font-weight: normal; /* Remove bold styling from text */
+    font-size: 0.875rem; /* 14px */
+}
+
+/* Styling the Facebook icon */
+.follow-btn img {
+    width: 1.5rem; /* Adjust size of the Facebook icon (24px) */
+    height: 1.5rem; /* Maintain same height */
+    margin-right: 0.5rem; /* Space between logo and text */
+}
+
+/* Styling the follower count */
+.follower-count {
+    font-weight: normal; /* Remove bold styling */
+}
+
+/* Styling the left section */
+.left-section {
+    font-size: 0.90rem;
+    margin-right: 8rem; /* Adds spacing between the left and right sections */
+    display: flex;
+    align-items: center;
+}
+
+.bold-link {
+    font-weight: bold; /* Make links bold */
+    text-decoration: none;
+    color: #000; /* Black text */
+    font-size: 0.875rem; /* 14px */
+}
+
+.bold-link:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    margin: 0 0.625rem; /* 10px equal spacing on both sides */
+    color: #333; /* Divider color */
+    font-size: 0.875rem; /* 14px */
+}
+
+.follow-btn {
+    display: flex; /* Align icon and text */
+    align-items: center; /* Center vertically */
+    background-color: #3B5998; /* Facebook blue */
+    color: #fff; /* White text */
+    border: none;
+    padding: 0.25rem 0.5rem; /* Smaller padding */
+    margin-left: 0.625rem; /* Spacing from links */
+    margin-right: 6rem; /* Spacing from the right section */
+    border-radius: 0.1875rem; /* Rounded corners */
+    cursor: pointer;
+    font-weight: normal; /* Keep text normal weight */
+    font-size: 0.75rem; /* Smaller font size */
+}
+
+/* Adjusting the Facebook icon size */
+.follow-btn img {
+    width: 1rem; /* Smaller icon width */
+    height: 1rem; /* Smaller icon height */
+    margin-right: 0.25rem; /* Space between icon and text */
+}
+
+/* Styling the follower count */
+.follower-count {
+    font-weight: normal; /* Keep normal weight */
+    margin-left: 0.25rem; /* Add some spacing after "Follow" */
+}
+
+/* Styling the right section */
+.right-section {
+    font-size: 0.90rem;
+    display: flex; /* Keep elements horizontally aligned */
+    align-items: center; /* Vertically align items */
+    gap: 1rem; /* Add spacing between items */
+}
+
+.date-time {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem; /* 10px space between elements */
+    font-size: 0.875rem; /* 14px */
+}
+
+.day {
+    font-weight: bold;
+    color: #000; /* Black text for the day and date */
+}
+
+.time {
+    font-weight: normal;
+    color: #808080; /* Grey text for the time (9PM, 12AM) */
+    text-transform: uppercase; /* Capitalize AM and PM */
+}
+
+/* Temperature Section Styling */
+.temp {
+    font-weight: bold; /* Bold for temperatures */
+    color: #000; /* Black text for temperatures */
+    display: flex;
+    align-items: center;
+}
+
+.temp img {
+    width: 2rem; 
+    height: 2rem;
+    margin-left: 0.25rem; /* Reduced spacing between temperature and image */
+}
+
+/* Styling for the time */
+.time {
+    font-weight: normal;
+    color: #808080; /* Grey text for the time (9PM, 12AM) */
+    text-transform: uppercase; /* Capitalize AM and PM */
+    margin-right: 0.25rem; /* Reduced spacing before image */
+}
+
+/* Styling for "5-Day Forecast" */
+.forecast a {
+    font-size: 0.90rem; /* Apply smaller font size to all text in the container */
+    font-weight: bold; /* Make text bold */
+    text-decoration: none; /* Remove underline */
+    color: #0078D7; /* Blue link color */
+}
+
+.timetoweather {
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem; /* 10px space between elements */
+    font-size: 0.875rem; /* 14px */
+}
+
+.timetoweather:hover {
+    text-decoration: underline;
+}
+
+.logo-wrapper {
+    display: flex; /* Align both containers horizontally */
+    justify-content: space-between; /* Push containers to opposite sides */
+    align-items: center; /* Align logos vertically to the same line */
+    margin-top: 0.5rem; /* Add spacing between the banner and logos */
+    width: 100%; /* Full-width alignment */
+    box-sizing: border-box; /* Include padding and borders in width */
+}
+.logo-container-left {
+    margin-left: 5rem; /* Adjust left positioning */
+}
+.logo-container-right {
+    margin-right: 5rem; /* Adjust right positioning */
+}
+
+.logo-container-left,
+.logo-container-right {
+    flex: 0 0 auto; /* Prevent containers from resizing */
+}
+
+.logo {
+    width: 10rem; /* Scalable size for logos */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.home-section {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Vertically align content */
+    margin-top: 0rem;
+    font-family: Arial, sans-serif; /* Match your site's font style */
+    font-size: 0.75rem; /* Adjust the text size */
+}
+
+.home-text {
+    display: flex;
+    align-items: left; /* Align the line with the text */
+    font-weight: bold; /* Bold styling for "Home" */
+    position: relative; /* Enable positioning for the blue line */
+    margin-right: 0.2rem; /* Add spacing between "Home" and "Last updated" */
+    margin-left: 15rem; /* Adjust left positioning */
+}
+
+.home-text::before {
+    content: ""; /* Create the blue line */
+    position: absolute;
+    left: -0.45rem; /* Position the line to the left of "Home" */
+    top: 0; /* Align with the top of the text */
+    height: 1em; /* Same height as the "H" in "Home" */
+    width: 0.25rem; /* Thickness of the blue line */
+    background-color: blue; /* Blue color for the line */
+}
+
+.last-updated {
+    font-weight: normal; /* Regular font weight for the timestamp */
+    color: black; /* Grey color for subtlety */
+}
+
+/* Container box */
+.navigation-box {
+    border: 0.0625rem solid #ccc; /* Thin border */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack rows vertically */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    font-family: Arial, sans-serif; /* Clean font family */
+    width: auto; /* Shrink to fit content */
+    max-width: 70rem; /* Set a maximum width for the box */
+    height: auto; /* Adjust height automatically to fit content */
+    margin: 0 auto; /* Center box horizontally, remove top margin */
+    padding: 0; /* Remove all internal spacing */
+    border-radius: 0; /* Pointy edges */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #f9f9f9; /* Light grey background for a clean look */
+}
+
+/* Styling for the top navigation */
+.top-navigation {
+    display: flex;
+    justify-content: center; /* Center-align links */
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping */
+    padding: 0; /* Remove extra padding */
+    margin: 0 auto; /* Center navigation inside the box */
+    background-color: white;
+    width: 100%; /* Ensure full width inside container */
+    max-width: 70rem; /*Match the container box*/
+}
+
+/* Links inside the top navigation */
+.top-navigation a {
+    color: #000; /* Black text */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    padding: 0.5rem 0.75rem; /* Keep spacing the same */
+    font-size: 0.875rem; /* Readable text size */
+    border-radius: 0; /* Pointy edges */
+    transition: color 0.3s ease;
+    position: relative;
+    text-align: left; /* Align text left */
+    display: inline-block; /* Allows precise text control */
+    padding-right: 1.2rem; /* Nudges text to the left */
+}
+
+/* Add black divider between links in the top row */
+.top-navigation a::after {
+    content: ""; /* Divider content */
+    position: absolute;
+    right: 0; /* Position to the right of each link */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Perfect vertical centering */
+    width: 1px; /* Thickness of the divider */
+    height: 50%; /* Full height divider */
+    background-color: #000; /* Black divider */
+}
+
+/* Remove divider after the last link */
+.top-navigation a:last-child::after {
+    display: none; /* No divider for the last link */
+}
+
+/* Hover effects with different colors for each link */
+.top-navigation a:nth-child(1):hover {
+    color: #00FFFF; /* cyan text for Home */
+}
+
+.top-navigation a:nth-child(2):hover {
+    color: #00FFFF; /* cyan text for News */
+}
+
+.top-navigation a:nth-child(3):hover {
+    color: #4c0197; /* Purple text for Royals */
+}
+
+.top-navigation a:nth-child(4):hover {
+    color: #00008B; /* Dark Blue text for U.S. */
+}
+
+.top-navigation a:nth-child(5):hover {
+    color: #008000; /* Green text for Sport */
+}
+
+.top-navigation a:nth-child(6):hover {
+    color: #800020; /* Burgundy text for TV */
+}
+
+.top-navigation a:nth-child(7):hover {
+    color: #ff0000; /* Red text for Showbiz */
+}
+
+.top-navigation a:nth-child(8):hover {
+    color: #692f69; /* Light Purple text for Femail */
+}
+
+.top-navigation a:nth-child(9):hover {
+    color: #00FFFF; /* Cyan text for Health */
+}
+
+.top-navigation a:nth-child(10):hover {
+    color: orangered; /* Orange text for Science */
+}
+
+.top-navigation a:nth-child(11):hover {
+    color: #2d024c; /* Dark Purple text for Money */
+}
+
+.top-navigation a:nth-child(12):hover {
+    color: #002b00; /* Dark Green text for Travel */
+}
+
+.top-navigation a:nth-child(13):hover {
+    color: black; /* Bright blue text for Podcasts */
+}
+
+.top-navigation a:nth-child(14):hover {
+    color: rgb(34, 28, 70); /* Grey text for Shopping */
+}
+
+.top-navigation a:nth-child(15):hover {
+    color: Black; /* Brown text for Mail+ */
+}
+
+/* Styling for the bottom navigation */
+.bottom-navigation {
+    display: flex;
+    justify-content: center; /* Align links consistently with the top bar */
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping */
+    padding: 0; /* Remove extra padding */
+    margin: 0 auto; /* Center the navigation */
+    background-color: #0056b3; /* Keep original background */
+    width: 100%; /* Full width inside container */
+    max-width: 70rem; /* Match top navigation container width */
+}
+
+/* Links inside the bottom navigation */
+.bottom-navigation a {
+    color: #fff; /* White text for contrast */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold for visibility */
+    padding: 0.5rem 0.75rem; /* Add spacing around each link */
+    font-size: 0.69rem; /* Smaller font for compact design */
+    position: relative; /* Enable positioning for dividers */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover */
+}
+
+/* Add black divider between links in the bottom row */
+.bottom-navigation a::after {
+    content: ""; /* Divider content */
+    position: absolute;
+    right: 0; /* Position to the right of each link */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Perfect vertical centering */
+    width: 1px; /* Thickness of the divider */
+    height: 45%; /* Full height divider */
+    background-color: white; /* White divider */
+}
+
+/* Remove divider for the last link */
+.bottom-navigation a:last-child::after {
+    display: none; /* No divider for the last link */
+}
+
+/* Hover effect for the bottom row links */
+.bottom-navigation a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Login button styling */
+.login-button {
+    display: inline-block; /* Makes the button inline and size-adjustable */
+    text-align: center; /* Centers the text within the button */
+    padding: 0.3125rem 0.9375rem; /* Precise padding (5px top/bottom, 15px left/right) */
+    font-size: 0.75rem; /* Matches their smaller button text (12px) */
+    font-weight: bold; /* Bold text for emphasis */
+    background-color: #ffffff; /* White background */
+    color: #007BFF; /* Blue text color */
+    border: 0.0625rem solid #ccc; /* Thin border, light grey */
+    border-radius: 20px; /* Rounded edges */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: all 0.3s ease; /* Smooth animation effects on hover */
+}
+
+.login-button:hover {
+    background-color: #f9f9f9; /* Light grey background on hover */
+    color: #000; /* Black text on hover */
+    text-decoration: underline; /* Adds underline on hover for emphasis */
+}
+
+/* Positioning the login button within the bottom navigation */
+.bottom-navigation .login-button {
+    margin-left: auto; /* Aligns button to the far right */
+    margin-right: 1rem; /* Adds spacing from the edge */
+}
+
+/* Adjust Layout */
+.layout-container {
+    display: grid;
+    grid-template-columns: 12rem 70rem 12rem; /* Fixed side widths */
+    grid-template-rows: auto auto; /* Structured stacking */
+    gap: 0; /* No extra space */
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+/* Ensure Ad Sections Fit Without Causing Overflow */
+.left-ad-section, .right-ad-section {
+    width: 12rem; /* Set exact width */
+    text-align: center;
+    position: sticky; /* Keep ads in place */
+    top: 0; /* Stick to top */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#side-ad-1 {
+    position: sticky;
+    top: 0; /* Keeps it fixed at the top */
+    width: 10rem;
+    z-index: 100;
+}
+
+#side-ad-2 {
+        position: sticky;
+        top: 0; 
+        width: 10rem;
+        z-index: 999;
+    }
+
+.nav-ad {
+    width: 100%;
+}
+
+/* Main Grid Section */
+.grid-section {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin: 0 auto;
+    max-width: 90%;
+    gap: 0;
+    padding: 0 auto;
+    background-color: white;
+}
+
+/* Grid Column Layout */
+.grid-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem
+}
+
+/* Left Column: Large Story + 2 Small Stories */
+.large-card {
+    width: 100%;
+    background: white;
+    border: 0.0625rem solid #e5e5e5;
+    transition: all 0.2s ease;
+}
+
+/*Author and published styling */
+.author-info {
+    text-align: center; /* Centers author and timestamps */
+    font-size: 0.8rem;
+}
+
+.author-section {
+    font-weight: bold;
+    text-align: left; 
+    margin-bottom: 0; 
+    padding-bottom: 0;
+}
+
+.divider-line {
+    width: 100%; 
+    height: 0.005rem; /* Sets the thickness of the line */
+    background-color: rgb(164, 159, 159);
+    margin: 0.5rem 0; /* Adds a slight gap around the lines */
+}
+
+.byline-section {
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: left;
+    color:grey;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0; 
+    padding-bottom: 0;
+}
+
+.byline-section .article-timestamp-label{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+/*Image for social media icons below title*/
+.social-icons {
+    display: block;
+    width: 98%; /* Shrinks the width to 80% of its original size */
+    margin: 1rem auto; /* Centers the image */
+}
+
+.large-card img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+/* Right Column: 6 Small Stories */
+
+/* Ensure Cards Stack Properly */
+.right-column {
+    display: flex;
+    flex-direction: column; /* Stacks cards vertically */
+    gap: 0rem; /* Adds space between stacked cards */
+    width: 100%;
+}
+
+/* Style Each Card */
+.right-column .card {
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 1rem; /* Adds spacing inside the box */
+    border-radius: 0; /* Pointy corners */
+    border: 1px solid #dcdcdc; /* Subtle border */
+    display: block; /* Change from flex to block to force stacking */
+    width: 100%; /* Ensures full width */
+    max-width: 300px; /* Adjustable width */
+    display: flex;
+    flex-direction: column; /* Ensures vertical stacking */
+    align-items: flex-start; /* Aligns content properly */
+}
+
+/* Ensure Image & Header Stay Side-by-Side Inside Each Card */
+.right-side-stories {
+    display: flex;
+    flex-direction: row; /* Keeps image next to header */
+    align-items: center; /* Centers the text and image */
+    gap: 1rem; /* Space between image & header */
+    width: 100%;
+}
+
+/* Image Adjustments */
+.right-side-stories img {
+    width: 154px;
+    height: 115px;
+    object-fit: cover; /* Ensures proper scaling */
+}
+
+/* Styling for Text */
+.right-column .card .pufftext {
+    color: #054b95; /* Blue text */
+    font-size: 0.875rem; /* Adjust text size */
+    margin-top: 0rem; /* Adds spacing above text */
+    text-decoration: none; /* Removes unwanted underlining */
+}
+
+.right-side-stories img:first-child {
+    margin-right: 0.02rem; /* Adds spacing between Play icon & text */
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.pufftext strong img {
+    margin-right: 0.02rem; /* Adds spacing for Play icon before "EXCLUSIVE" */
+    vertical-align: middle; /* Keeps icons aligned with text */
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.right-column .card:hover {
+    background-color: #d8a7ff; /* Light pink-purple */
+    color: white; /* Ensures all text turns white */
+    transition: 0.3s ease-in-out; /* Smooth hover transition */
+}
+
+.right-column .card:hover .pufftext {
+    color: white; /* Ensures pufftext turns white */
+}

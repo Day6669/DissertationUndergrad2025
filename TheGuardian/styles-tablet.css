@@ -1,0 +1,29 @@
+/* Top banner adjustments */
+.top-banner {
+    height: 3.25rem; /* Reduce height for tablets */
+    padding: 0 2rem; /* Adjust padding */
+}
+
+.banner-text {
+    font-size: 1.25rem; /* Slightly smaller font size */
+}
+
+.banner-nav ul li a {
+    font-size: 1rem; /* Reduce font size for links */
+    padding: 0 0.75rem; /* Adjust spacing around links */
+}
+
+.container {
+    max-width: 60rem; /* Adjust container width for medium screens */
+    gap: 1.5rem; /* Reduce spacing between grid items */
+}
+
+/* Second banner adjustments */
+.second-banner {
+    padding: 1.5rem 2rem; /* Adjust padding for the second banner */
+}
+
+.section-title {
+    font-size: 1.5rem; /* Adjust headline font size */
+    margin-bottom: 30rem; /* Reduce space below the headline */
+}

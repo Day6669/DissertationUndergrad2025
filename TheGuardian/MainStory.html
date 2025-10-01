@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Guardian (Prototype)</title>
+        <!-- Base Styles -->
+        <link rel="stylesheet" href="MainStory.css">
+</head>
+
+<body>
+    <!-- Main top banner container -->
+    <div class="top-banner">
+        <!-- Left side of banner with support text -->
+        <div class="support-section">
+            <!-- Container for stacked text -->
+            <div class="banner-text">
+                <!-- Main support text -->
+                <div class="support-line">Support the Guardian</div>
+                <!-- Secondary funding text -->
+                <div class="fund-line">Fund independent journalism with £12 per month</div>
+            </div>
+            <!-- Yellow support button with animated arrow -->
+            <a href="#" class="support-button">
+                Support us
+                <!-- SVG arrow icon - viewBox defines coordinate system, aria-hidden makes it decorative -->
+                <svg viewBox="0 0 32 32" width="1rem" height="1rem" aria-hidden="true">
+                    <path d="M22.82 15.42l-6.36-6.35L18.4 7l9.43 9.42L18.4 25.85l-1.94-2.07 6.36-6.36H3v-2h19.82z" fill="currentColor"></path>
+                </svg>
+            </a>
+        </div>
+        <!-- Right side navigation -->
+        <nav class="banner-nav">
+            <ul>
+                <li><a href="#">Print subscriptions</a></li>
+                <li><a href="#">Search jobs</a></li>
+                <li>
+                    <div>
+                        <svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 0C3.1 0 0 3.1 0 7c0 2 .9 3.9 2.4 5.2C3.6 13.4 5.3 14 7 14c1.7 0 3.4-.6 4.7-1.8C13.2 10.9 14 9 14 7c0-3.9-3.1-7-7-7zm0 1.8c1.3 0 2.1.8 2.1 2.1S8 6.3 7 6.3c-.8 0-2-1.1-2-2.4 0-1.4.7-2.1 2-2.1zm0 11.6c-1.7 0-3.3-.7-4.5-1.8l.8-3.2.5-.5c1-.4 2.1-.5 3.1-.5 1.1 0 2.1.2 3.1.5l.5.5.9 3.2c-1.1 1.2-2.7 1.8-4.4 1.8z"></path></svg>
+                        <a href="#">Sign in</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="second-banner">
+        <div class="guardian-branding">
+            <div class="stacked-title">
+                <div class="the">The</div>
+                <div class="guardian-main">Guardian</div>
+            </div>
+            <div class="edition-dropdown">
+                <button class="edition-button">
+                    UK
+                    <svg viewBox="0 0 32 32" width="0.75rem" height="0.75rem">
+                        <path d="M16 19.4L27.4 8L29 9.6L16 22.6L3 9.6L4.6 8L16 19.4Z" fill="currentColor"></path>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">UK edition</a>
+                    <a href="#">US edition</a>
+                    <a href="#">Australia edition</a>
+                    <a href="#">International edition</a>
+                </div>
+            </div>
+        </div>
+        <div class="top-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/" style="--pillar-underline:#FF5943;" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="/commentisfree" style="--pillar-underline:#FF7F0F;" class="nav-link">Opinion</a></li>
+                <li class="nav-item"><a href="/sport" style="--pillar-underline:#00B2FF;" class="nav-link">Sport</a></li>
+                <li class="nav-item"><a href="/culture" style="--pillar-underline:#EACCA0;" class="nav-link">Culture</a></li>
+                <li class="nav-item"><a href="/lifeandstyle" style="--pillar-underline:#FFABDB;" class="nav-link">Lifestyle</a></li>
+                <li class="menu-button">
+                    <div class="yellow-circle">
+                        <svg viewBox="0 0 24 24" width="1.375rem" height="1.375rem">
+                            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <body>
+        <div class="container-fluid">
+            <div class="row g-0">
+                <!-- Cohesive Box Wrapping Both the Headline Title and Grid -->
+                <div class="content-wrapper border-box">
+                    <!-- The Navigation Bar for the white page-->
+            <div class="sub-nav">
+                <ul>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Economics</a></li>
+                    <li><a href="#">Banking</a></li>
+                    <li><a href="#">Money</a></li>
+                    <li><a href="#">Markets</a></li>
+                    <li><a href="#">Project Syndicate</a></li>
+                    <li><a href="#">B2B</a></li>
+                    <li><a href="#">Retail</a></li>
+                </ul>
+            </div>
+                                        <!-- Headlines Title -->
+                                        <div class="">
+                                            <h2 class="section-title">Politics</h2>
+                                            <div class="section-divider">
+                                                <div class="divider-line"></div>
+                                                <div class="divider-line"></div>
+                                                <div class="divider-line"></div>
+                                            </div>
+                                            <div class="byline-section">
+                                                <div class="byline-stack">
+                                                    <div class="author">Jessica Elgot <br> Kiran stacey <br> Helena Horton</div>
+                                                    <div class="publish-date">Tue 4 Feb 2025 23:15 BST</div>
+                                                    <button class="share-button">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256" style="fill:#FA5252;">
+                                                            <g fill="#fa5252"><g transform="scale(10.66667,10.66667)">
+                                                                <path d="M18,2c-1.64501,0 -3,1.35499 -3,3c0,0.19095 0.02179,0.37712 0.05664,0.55859l-7.13477,4.16211c-0.52334,-0.44285 -1.1898,-0.7207 -1.92187,-0.7207c-1.64501,0 -3,1.35499 -3,3c0,1.64501 1.35499,3 3,3c0.73208,0 1.39854,-0.27785 1.92188,-0.7207l7.13477,4.16016c-0.03509,0.18206 -0.05664,0.36893 -0.05664,0.56055c0,1.64501 1.35499,3 3,3c1.64501,0 3,-1.35499 3,-3c0,-1.64501 -1.35499,-3 -3,-3c-0.73252,0 -1.39841,0.27933 -1.92187,0.72266l-7.13477,-4.16406c0.03485,-0.18147 0.05664,-0.36764 0.05664,-0.55859c0,-0.19095 -0.02179,-0.37712 -0.05664,-0.55859l7.13477,-4.16211c0.52333,0.44285 1.1898,0.7207 1.92188,0.7207c1.64501,0 3,-1.35499 3,-3c0,-1.64501 -1.35499,-3 -3,-3zM18,4c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1zM6,11c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1zM18,18c0.56413,0 1,0.43587 1,1c0,0.56413 -0.43587,1 -1,1c-0.56413,0 -1,-0.43587 -1,-1c0,-0.56413 0.43587,-1 1,-1z"></path>
+                                                            </g></g>
+                                                        </svg>
+                                                        Share
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                        <div style="flex: 1;">
+                            <h2 class="main-title">Labour MPs at 'breaking point' over Starmer's oilfield plans</a></h2>
+                            <div>
+                                <img src="ProtestImage.avif" alt="Rosebank Protest" style="width: 100%; height: 400px; object-fit: cover;">
+                            </div>
+                            <p class="article-description">
+                                we don't build up domestic supply chains and manufacturing for renew-ables, oil workers will have nowhere to go. They won't thank us for that." A fourth Labour MP said it was important to make the case that new oilfields should not be seen as an automatic growth advantage.
+                                "You're banking on what could potentially very quickly become stranded assets and the profits go to private companies but it's the public sector that will end up clearing up the mess.
+                                "That is not a good investment and I think there are some of my colleagues that sort of think that all growth is good and that's actually economically illiterate.<br><br>
+                                "The new intake are very clear. If Trump is closing his door on green investment, we should be opening the door to green investment. The Americans are going to miss out. We don't want to."<br><br>
+                                The backlash against Rosebank would be "much, much bigger" than on Heathrow, another MP said.
+                                "It says a worrying thing about our political strategy," they said. "There was a quite clear line on all of this stuff. And then if you get panicked just by a couple of headlines in the Daily Mail, then that as a narrative feels a bit worrying." Another MP agreed. "They can hold the line that you can make electric planes but digging up a tonne of oil really isn't anything other than environmental vandalism," they said. "Rosebank is fundamentally a disaster."<br><br>
+                                Five Labour MPs, including three who chair different all-party parliament groups (APPGs) on climate and renewable energy, wrote a letter to the Times yesterday criticising the automatic link made between new oilfields and economic growth - with a veiled reminder of Labour's green electoral platform.<br><br>
+                                "Labour's mandate is clear: the country wants a decisive shift toward a future with cleaner, more secure
+                                energy," it said, signed by Luke Murphy, Polly Billington and Alex Sobel, Peter Swallow and Abtisam Mohamed.<br><br>
+                                Another member of the climate
+                                APPG, Uma Kumaran, tweeted after the ruling: "Britain's future lies in clean energy, not more oil and gas." The former shadow ministers Sarah Champion and Barry Gar-diner both said the government must rule out any further development.
+                                "Approving the Rosebank operation is simply not compatible with our climate goals," Champion said. Gardiner said it was a test whether the chancellor was "willing to abide by her manifesto commitment". Two other factors will be the view of Scottish
+                                Labour and the GMB union, which are pushing for the development to be approved. A significant number of ministers are members of GMB.
+                                The Scottish Labour leader, Anas Sarwar, has hinted he expects the government to honour the commitment to the licence - but some new Scottish Labour MPs are opposed.<br><br>
+                                The Rosebank row opens Scottish Labour to criticism from all sides, as seen yesterday when voices from across the political spectrum in Scotland attacked Starmer's "broken promises" after the new boss of GB Energy, Juergen Maier, admitted in his first broadcast interview the prime minister's pledge of 1,000 jobs for Aberdeen could take 20 years.<br><br>
+                                Miliband's guidelines will be the result of a consultation into how emissions caused by the burning of oil and gas extracted from energy projects will be accounted and allowed for in planning applications.<br>
+                                Tessa Khan, the founder of the climate campaign group Uplift, which brought the case against Rosebank, said she was confident the guidance would preclude the new oilfields. </p>
+                        </div>
+                        <div class="right-column">
+                            <!-- Vertical Lines -->
+                            <div class="vertical-lines">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                </div>
+                                <!-- Most Viewed Header -->
+                                <h3 class="most-viewed">Most viewed</h3>
+                            <article class="card right-story">
+                                <div class="story-content">
+                                    <img src="Cat.avif" alt="Cat Photo" class="circle-image">
+                                    <h3 class="right-title">Scotland insist 'no pet ban' after panic</h3>
+                                </div>
+                            </article>
+                            
+                            <article class="card right-story">
+                                <img src="StabbingIncident.avif" alt="Memorial flowers for dead teen" class="circle-image">
+                                <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;">Boy,15, dies after stabbing incident at Sheffield school </h3>
+                            </article>
+                            
+                            <article class="card right-story">
+                                <img src="Microplastics.avif" alt="Microplastics on finger" class="circle-image">
+                                <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;"> Level in human brains rising, study suggests </h3>
+                            </article>
+
+                            <article class="card right-story">
+                                <img src="TeenSoldier.webp" alt="Photo of military teen who died in action" class="circle-image">
+                                <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;"> British volunteer in Ukraine, 18, killed by drone on first mission</h3>
+                            </article>
+                            
+                            <article class="card right-story">
+                                <img src="Trump.avif" alt="Make America Great Again" class="circle-image">
+                                <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;">How US levies may affect the UK and EU </h3>
+                            </article>
+                </div>
+            </div>
+        </div>
+        <footer class="bottom-banner">
+            <div class="footer-content">
+                <img src="TheGuardianFooter.png" alt="Guardian Footer" class="footer-image">
+            </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

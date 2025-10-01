@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Guardian (Prototype)</title>
+        <!-- Base Styles -->
+        <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Main top banner container -->
+    <div class="top-banner">
+        <!-- Left side of banner with support text -->
+        <div class="support-section">
+            <!-- Container for stacked text -->
+            <div class="banner-text">
+                <!-- Main support text -->
+                <div class="support-line">Support the Guardian</div>
+                <!-- Secondary funding text -->
+                <div class="fund-line">Fund independent journalism with £12 per month</div>
+            </div>
+            <!-- Yellow support button with animated arrow -->
+            <a href="#" class="support-button">
+                Support us
+                <!-- SVG arrow icon - viewBox defines coordinate system, aria-hidden makes it decorative -->
+                <svg viewBox="0 0 32 32" width="1rem" height="1rem" aria-hidden="true">
+                    <path d="M22.82 15.42l-6.36-6.35L18.4 7l9.43 9.42L18.4 25.85l-1.94-2.07 6.36-6.36H3v-2h19.82z" fill="currentColor"></path>
+                </svg>
+            </a>
+        </div>
+        <!-- Right side navigation -->
+        <nav class="banner-nav">
+            <ul>
+                <li><a href="#">Print subscriptions</a></li>
+                <li><a href="#">Search jobs</a></li>
+                <li>
+                    <div>
+                        <svg width="14" height="14" viewBox="0 0 14 14"><path d="M7 0C3.1 0 0 3.1 0 7c0 2 .9 3.9 2.4 5.2C3.6 13.4 5.3 14 7 14c1.7 0 3.4-.6 4.7-1.8C13.2 10.9 14 9 14 7c0-3.9-3.1-7-7-7zm0 1.8c1.3 0 2.1.8 2.1 2.1S8 6.3 7 6.3c-.8 0-2-1.1-2-2.4 0-1.4.7-2.1 2-2.1zm0 11.6c-1.7 0-3.3-.7-4.5-1.8l.8-3.2.5-.5c1-.4 2.1-.5 3.1-.5 1.1 0 2.1.2 3.1.5l.5.5.9 3.2c-1.1 1.2-2.7 1.8-4.4 1.8z"></path></svg>
+                        <a href="#">Sign in</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="second-banner">
+        <div class="guardian-branding">
+            <div class="stacked-title">
+                <div class="the">The</div>
+                <div class="guardian-main">Guardian</div>
+            </div>
+            <div class="edition-dropdown">
+                <button class="edition-button">
+                    UK
+                    <svg viewBox="0 0 32 32" width="0.75rem" height="0.75rem">
+                        <path d="M16 19.4L27.4 8L29 9.6L16 22.6L3 9.6L4.6 8L16 19.4Z" fill="currentColor"></path>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">UK edition</a>
+                    <a href="#">US edition</a>
+                    <a href="#">Australia edition</a>
+                    <a href="#">International edition</a>
+                </div>
+            </div>
+        </div>
+        <div class="top-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="/" style="--pillar-underline:#FF5943;" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="/commentisfree" style="--pillar-underline:#FF7F0F;" class="nav-link">Opinion</a></li>
+                <li class="nav-item"><a href="/sport" style="--pillar-underline:#00B2FF;" class="nav-link">Sport</a></li>
+                <li class="nav-item"><a href="/culture" style="--pillar-underline:#EACCA0;" class="nav-link">Culture</a></li>
+                <li class="nav-item"><a href="/lifeandstyle" style="--pillar-underline:#FFABDB;" class="nav-link">Lifestyle</a></li>
+                <li class="menu-button">
+                    <div class="yellow-circle">
+                        <svg viewBox="0 0 24 24" width="1.375rem" height="1.375rem">
+                            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <body>
+        <div class="container-fluid">
+            <div class="row g-0">
+                <!-- Cohesive Box Wrapping Both the Headline Title and Grid -->
+                <div class="content-wrapper border-box">
+                    <!-- The Navigation Bar for the white page-->
+            <div class="sub-nav">
+                <ul>
+                    <li><a href="#">UK</a></li>
+                    <li><a href="#">US politics</a></li>
+                    <li><a href="#">World</a></li>
+                    <li><a href="#">Climate crisis</a></li>
+                    <li><a href="#">Middle East</a></li>
+                    <li><a href="#">Ukraine</a></li>
+                    <li><a href="#">Football</a></li>
+                    <li><a href="#">Newsletters</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Environment</a></li>
+                    <li><a href="#">UK politics</a></li>
+                    <li><a href="#">Science</a></li>
+                    <li><a href="#">Tech</a></li>
+                    <li><a href="#">Global development</a></li>
+                    <li><a href="#">Obituaries</a></li>
+                </ul>
+            </div>
+                        <!-- Headlines Title -->
+                        <div class="">
+                            <h2 class="section-title">Headlines</h2>
+                        </div>
+                        
+                        <!-- Main Content Area -->
+                                <!-- Main Story Box -->
+                                <div class="main-stories">
+                                    <div class="card main-story">
+                                        <div style="display: flex; gap: 1rem;">
+                                            <div style="flex: 1;">
+                                                <h2 class="main-title"><a href="MainStory.html" class="custom-link">Starmer faces Labour revolt over backing for oilfield</a></h2>
+                                                <div class="article-tag" style="color: #c70000;">Jessica Elgot <br> Kiran stacey<br> Helena Horton<br> </div>
+                                                <p class="article-description">
+                                                    Keir Starmer is facing a growing internal backlash over the potential approval of a giant new oilfield after 
+                                                    Treasury sources indicated Rachel Reeves was likely to back the idea. MPs described a "breaking point" in relations and called for Starmer to reiterate his own commitments to no further oil and gas licences. The Rosebank development was given the go-ahead in 2023 but ruled unlawful by a court last week.
+                                                    <br><br> The energy secretary, Ed Miliband, has previously described the licence for Rosebank as "climate vandalism"
+                                                    - setting up a potential clash between his department and the Treasury.
+                                                    Reeves is understood to be supportive of a new application for environmental consent, with allies suggesting that this would not violate Labour's manifesto, which promised not to issue new exploration licences but not to cancel ones already issued. In spring, Miliband's department is due to publish new guidelines that could scupper any attempt by the oil companies to successfully resubmit their applications.
+                                                    <br><br>
+                                                    Climate concerned MPs are likely to appeal directly to the prime minister about the importance of being seen to stick to the manifesto commitment of no new oil and gas licences.
+                                                    Anger is widespread even among centrist Labour MPs who have been champions of infrastructure.
+                                                    It is understood the Labour Growth Group - a large caucus of mostly new Labour MPs who have pushed hard on announcements on housing and infrastructure - will not take a position backing Rosebank. The group did back the Heathrow expansion plan announced by Reeves last week.
+                                                    MPs said more criticism would be
+                                                    forthcoming if approval was being pushed by the Treasury. "This absolutely is a line in the sand for almost everyone in the PLP [parliamentary Labour party]. This goes specifically against what we said we were about," one MP said... </p>
+                                                <div class="article-meta">13m ago</div>
+                                            </div>
+                                            <div style="width: 45%;">
+                                                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                                    <div>
+                                                        <img src="beyoncegrammys.jpg" alt="GrammyBeyonce" style="width: 80%; height: 230px; object-fit: cover;">
+                                                    </div>
+                                                    <div style="display: flex; gap: 0.5rem;">
+                                                        <div style="width: 50%; padding-top: 0.5rem; border-top: 1px solid #DCDCDC;">
+                                                            <div class="article-tag" style="color: #c70000;">News Page 12 -> </div>
+                                                            <h3 class="related-title" style="font-size: 0.9rem;">The one she wanted Beyoncé gets album of the year Grammy - after 99 nominations</h3>
+                                                        </div>
+                                                        <div style="width: 50%; padding-top: 0.5rem; border-top: 1px solid #DCDCDC;">
+                                                            <div class="article-tag" style="color: #c70000;">PHOTOGRAPH: <br> FRANCIS SPECKER/CRS/<br/>GETTY </div>
+                                                            <h3 class="related-title" style="font-size: 0.9rem;">Beyoncé, with daughter Blue Ivy, collecting her best album award at the Grammys</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="middle-column">
+
+                                            
+                                                        <article class="card right-story" style="padding: 1rem; margin-bottom: 1rem; border-top: 1px solid #DCDCDC;">
+                                                            <div class="article-tag" style="color: #c70000;">G2 Centre pullout</div>
+                                                            <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;">Features and arts</h3>
+                                                            <div class="article-meta">9h ago</div>
+                                                        </article>
+                                                        
+                                                        <article class="card right-story" style="padding: 1rem; margin-bottom: 1rem; border-top: 1px solid #DCDCDC;">
+                                                            <div class="article-tag" style="color: #c70000;">Journal Outside G2</div>
+                                                            <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;">Opinions and ideas</h3>
+                                                            <div class="article-meta">3h ago</div>
+                                                        </article>
+                                                    </div>
+                                                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                                        <div style="padding-top: 0.5rem; border-top: 1px solid #DCDCDC;">
+                                                            <h3 class="right-title" style="font-size: 1.25rem; font-weight: bold; margin: 0.5rem 0;">Number of non-smokers with lung cancer on rise</h3>
+                                                            <div class="article-tag" style="color: #c70000;">Andrew Gregory <br> Health editor</div>
+                                                            <p class="article-description">The proportion of people diagnosed with lung cancer who have never smoked is increasing, with air pollution an "important factor", the World Health Organization's cancer agency has said. Lung cancer in people who have never smoked cigarettes or tobacco is now estimated to be the fifth highest cause of cancer deaths worldwide, according to the International Agency for Research on Cancer (IARC). Lung cancer in never-smokers is also occurring...</p>
+                                                            <div class="article-meta">9h ago</div>
+                                                        </div>
+                                                        <div style="padding-top: 0.5rem; border-top: 1px solid #DCDCDC;">
+                                                            <div class="article-tag" style="color: #c70000;">G2 Centre pullout</div>
+                                                            <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;">Features and arts</h3>
+                                                            <div class="article-meta">9h ago</div>
+                                                        </div>
+                                                        <div style="padding-top: 0.5rem; border-top: 1px solid #DCDCDC;">
+                                                            <div class="article-tag" style="color: #c70000;">Journal Outside G2</div>
+                                                            <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;">Opinions and ideas</h3>
+                                                            <div class="article-meta">3h ago</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Second Story Box -->
+                                    <div class="container-secondary">
+                                        <div class="card second-title-box" style="padding: 2rem; min-height: 300px; margin-top: 1rem;">
+                                            <div style="display: flex; gap: 1rem;">
+                                                <div style="flex: 1;">
+                                                    <div class="article-image-container" style="width: 45%;">
+                                                        <img src="US-Mexico-Dispute.jpg" alt="US-Mexico-Dispute" style="width: 160%; height: 115px; object-fit: cover;">
+                                                    </div>
+                                                    <h2 class="main-title"><a href="SecondMainStory.html" class="custom-link"> US and Mexico agree to one-month tariffs pause </a></h2>
+                                                    <div class="article-tag" style="color: #c70000;">Tom Phillips <br> Richard Partington</div>
+                                                    <p class="article-description">The US president, Donald Trump, and his Mexican counterpart, Claudia Sheinbaum, last night agreed a last-minute "pause" in US tariffs on a day of extreme volatility on financial markets caused by fears of a global trade war.<br>
+                                                        With Canada and China subject to increases in levies on exports to the US from today, Mexico, which had also been due to be affected, said the countries had reached a "series of agreements", Trump upended US-Mexico ties over the weekend when he announced the 25% levies and accused Sheinbaum's administration of engaging in an "intolerable alliance" with Mexican crime groups. Sheinbaum rejected the accusation as "slanderous"...</p>
+                                                    <div class="article-meta">2h ago</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Right Column Stories -->
+                                <div class="right-column">
+                                    <article class="card right-story">
+                                        <div class="article-tag" style="color: #c70000;">Zoe Williams, G2</div>
+                                        <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;">'Bridget Jones reminds me of a much more comfortable era'</h3>
+                                        <div class="article-meta">9h ago</div>
+                                    </article>
+                                    
+                                    <article class="card right-story">
+                                        <div class="article-tag" style="color: #c70000;">G2</div>
+                                        <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;">Power dressing Why style matters in Trump 2.0</h3>
+                                        <div class="article-meta">9h ago</div>
+                                    </article>
+                                    
+                                    <article class="card right-story">
+                                        <div class="article-tag" style="color: #c70000;">If the hat fits</div>
+                                        <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;">Yorkshire woollen mill delighted as its fabric takes starring role at Grammys <br> Page 12</h3>
+                                        <div class="article-meta">3h ago</div>
+                                    </article>
+                                    
+                                    <article class="card right-story">
+                                        <div class="article-tag" style="color: #c70000;">Gaby Hinsliff <br> Page 1 </div>
+                                        <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;">"Donald Trump has shown his hand. Now it's time for a united front"</h3>
+                                        <div class="article-meta">3h ago</div>
+                                    </article>
+                                    
+                                    <article class="card right-story">
+                                        <div class="article-tag" style="color: #c70000;">Three's a crowd? <br> Page 8 </div>
+                                        <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;">Nicola Walker, Erin Doherty and Stephen Mangan on their menage a trois play</h3>
+                                        <div class="article-meta">31m ago</div>
+                                    </article>
+                                    
+                                    <article class="card right-story">
+                                        <div class="article-tag" style="color: #c70000;">Quick crossword</div>
+                                        <h3 class="right-title" style="font-size: 1.25rem; font-weight: 500; margin: 0.5rem 0;">Back of G2</h3>
+                                        <div class="article-meta">1h ago</div>
+                                    </article>
+                                </div>
+                            </div> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
